@@ -75,7 +75,7 @@ def spirit_odds(df) -> dict[str, int]:
 
 
 if __name__ == '__main__':
-    data = pull_data('Game Log')
+    data = pull_data('Ben')
     df = pd.DataFrame(data[1:], columns=data[0])
     df = df[df['Result'].str.len() > 0]
     odds = spirit_odds(df)
